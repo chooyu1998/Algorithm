@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 
+//solution for https://www.acmicpc.net/problem/2644
 class BFS {
 	int V;
 	LinkedList<Integer> adj[];
