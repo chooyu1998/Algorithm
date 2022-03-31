@@ -3,12 +3,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 
-class DFS{
+class obj_2606{
 	int V;
 	LinkedList<Integer> adj[];
 	boolean[] visited;
 	int res = -1;
-	DFS(int v){
+	obj_2606 (int v){
 		V = v+1;
 		adj = new LinkedList[V];
 		visited = new boolean[V];
@@ -47,7 +47,7 @@ public class dfs_2606 {
 		int node = Integer.parseInt(br.readLine());
 		int edge = Integer.parseInt(br.readLine());
 		
-		DFS dfs = new DFS(node);
+		obj_2606 dfs = new obj_2606(node);
 		for(int i = 0; i < edge; i++) {
 			str = br.readLine();
 			int node_1 = Integer.parseInt(str.split(" ")[0]);
