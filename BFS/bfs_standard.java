@@ -6,11 +6,11 @@ import java.util.LinkedList;
 
 //solution for https://www.acmicpc.net/problem/1260 
 
-class BFS{
+class BFS_st{
 	int V;
 	LinkedList<Integer> adj[];
 	
-	BFS(int v){
+	BFS_st(int v){
 		V = v+1;
 		adj = new LinkedList[V];
 		for(int i = 0; i < V; i++) {
@@ -95,7 +95,7 @@ public class bfs_standard {
 		int edge = Integer.parseInt(str.split(" ")[1]);
 		int start = Integer.parseInt(str.split(" ")[2]);
 		
-		BFS bfs = new BFS(node);
+		BFS_st bfs = new BFS_st(node);
 		DFS dfs = new DFS(node);
 		for(int i = 0; i < edge; i++) {
 			str = br.readLine();
